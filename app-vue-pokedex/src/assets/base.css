@@ -1,0 +1,52 @@
+body.light{
+  background-image: url("./fons_blanc.jpg");
+  --bg-color: #eeee;
+  --btn-color: rgb(107, 153, 167);
+  --shadow: 0 3px 15px rgb(47, 47, 57);
+  --box-shadow: 0 3px 8px rgb(47, 47, 57);
+  --radio: rgb(47, 47, 57);
+}
+body.dark{
+  background-image: url("./fons_negre.jpg");
+  --bg-color: rgb(47, 47, 57);
+  --color: #eeee;
+  --btn-color: rgb(47, 47, 57);
+  --shadow: 0 3px 15px #eeee;
+  --box-shadow: 0 3px 8px #eeee;
+  --radio:rgb(107, 153, 167);
+}
+body.dark #pokemon-container,body.dark .container{
+  box-shadow: var(--shadow);
+}
+body.dark #pokemon-container,body.dark .container,body.dark .pokemon-block,body.dark #pokemons-container{
+  background-color: var(--bg-color);
+}
+.name{
+  color: var(--color);
+}
+#surprise{
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow);
+}
+.btn{
+  background-color: var(--btn-color);
+  color: var(--color);
+  border: var(--shadow);
+}
+h1{
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow);
+}
+body.dark .detalls{
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow);
+}
+body.dark img, .btn, body.dark #surprise, .body-dark .detalls img{
+  box-shadow: var(--box-shadow);
+}
+header{
+  background-color: var(--btn-color);
+}
+.controls{
+  accent-color: var(--radio);
+}
